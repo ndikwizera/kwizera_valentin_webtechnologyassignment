@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<center>
+<h1>ADVANCED DRIVER MANAGEMENT SYSTEM</h1>
+<style>
+    /* CSS for the menu */
+    ul.menu {
+        list-style-type: none; /* Remove default list styles */
+        margin: 0;
+        padding: 0;
+        background-color: skyblue;
+        overflow: hidden;
+    }
+    li.menu-item {
+        float: left;
+    }
+    li.menu-item a {
+        display: block;
+        padding: 12px 16px;
+        text-decoration: none;
+        color: #333;
+    }
+    li.menu-item a:hover {
+        background-color: lightblue;
+    }
+    /* CSS for dropdown menu */
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-menu a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown-menu a:hover {
+        background-color: #f1f1f1;
+    }
+    /* CSS for registration form */
+    .registration-form {
+        display: none;
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+    }
+    .registration-form input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    .registration-form button {
+        width: 100%;
+        padding: 10px;
+        background-color: skyblue;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<ul class="menu">
+    <li class="menu-item"><a href="index.html">Home</a></li>
+    <li class="menu-item"><a href="about.html" >About</a></li>
+    <li class="menu-item"><a href="services.html">Services</a></li>
+    <li class="menu-item"><a href="contactus.html">Contact us</a></li>
+    <li class="menu-item"><a href="form.html">Form</a></li>
+    <li class="menu-item"><a href="mybook.html">my book</a></li>
+</ul>
+<div>
+    <h2>Registration Form</h2>
+    <form action="/submit_registration.php" method="POST">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>
